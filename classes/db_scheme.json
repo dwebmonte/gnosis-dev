@@ -1,0 +1,284 @@
+{
+    "onload": {
+        "ip_logs": [
+            "`id`",
+            "`host`",
+            "`ip`",
+            "`platform`",
+            "`browser`",
+            "`version`",
+            "`user_id`",
+            "`time_created`"
+        ],
+        "settings": [
+            "`id`",
+            "`title`",
+            "`name`",
+            "`value`"
+        ],
+        "uploads": [
+            "`id`",
+            "`origin_name`",
+            "`type`",
+            "`size`",
+            "`name`",
+            "`rel_url`",
+            "`user_id`",
+            "`time_created`",
+            "`md5`"
+        ],
+        "user_roles": [
+            "`id`",
+            "`title`",
+            "`name`"
+        ],
+        "users": [
+            "`id`",
+            "`login`",
+            "`password`",
+            "`email`",
+            "`firstname`",
+            "`role`",
+            "`time_created`",
+            "`enabled`",
+            "`avatar`"
+        ]
+    },
+    "fields": {
+        "ip_logs": {
+            "id": {
+                "name": "id",
+                "type": "int",
+                "length": "10",
+                "default": null,
+                "validator": "int"
+            },
+            "host": {
+                "name": "host",
+                "type": "varchar",
+                "length": "512",
+                "default": ""
+            },
+            "ip": {
+                "name": "ip",
+                "type": "varchar",
+                "length": "512",
+                "default": ""
+            },
+            "platform": {
+                "name": "platform",
+                "type": "varchar",
+                "length": "512",
+                "default": ""
+            },
+            "browser": {
+                "name": "browser",
+                "type": "varchar",
+                "length": "512",
+                "default": ""
+            },
+            "version": {
+                "name": "version",
+                "type": "varchar",
+                "length": "512",
+                "default": ""
+            },
+            "user_id": {
+                "name": "user_id",
+                "type": "int",
+                "length": "10",
+                "default": null,
+                "validator": "int"
+            },
+            "time_created": {
+                "name": "time_created",
+                "type": "timestamp",
+                "length": null,
+                "default": "CURRENT_TIMESTAMP"
+            }
+        },
+        "settings": {
+            "id": {
+                "name": "id",
+                "type": "int",
+                "length": "10",
+                "default": null,
+                "validator": "int"
+            },
+            "title": {
+                "name": "title",
+                "type": "varchar",
+                "length": "255",
+                "default": ""
+            },
+            "name": {
+                "name": "name",
+                "type": "varchar",
+                "length": "64",
+                "default": ""
+            },
+            "value": {
+                "name": "value",
+                "type": "varchar",
+                "length": "512",
+                "default": ""
+            }
+        },
+        "uploads": {
+            "id": {
+                "name": "id",
+                "type": "int",
+                "length": "10",
+                "default": null,
+                "validator": "int"
+            },
+            "origin_name": {
+                "name": "origin_name",
+                "type": "varchar",
+                "length": "512",
+                "default": ""
+            },
+            "type": {
+                "name": "type",
+                "type": "varchar",
+                "length": "64",
+                "default": ""
+            },
+            "size": {
+                "name": "size",
+                "type": "bigint",
+                "length": "20",
+                "default": "0",
+                "validator": "int"
+            },
+            "name": {
+                "name": "name",
+                "type": "varchar",
+                "length": "64",
+                "default": ""
+            },
+            "rel_url": {
+                "name": "rel_url",
+                "type": "varchar",
+                "length": "127",
+                "default": ""
+            },
+            "user_id": {
+                "name": "user_id",
+                "type": "int",
+                "length": "10",
+                "default": "0",
+                "validator": "int"
+            },
+            "time_created": {
+                "name": "time_created",
+                "type": "timestamp",
+                "length": null,
+                "default": "CURRENT_TIMESTAMP"
+            },
+            "md5": {
+                "name": "md5",
+                "type": "varchar",
+                "length": "32",
+                "default": ""
+            }
+        },
+        "user_roles": {
+            "id": {
+                "name": "id",
+                "type": "int",
+                "length": "10",
+                "default": null,
+                "validator": "int"
+            },
+            "title": {
+                "name": "title",
+                "type": "varchar",
+                "length": "64",
+                "default": ""
+            },
+            "name": {
+                "name": "name",
+                "type": "varchar",
+                "length": "16",
+                "default": ""
+            }
+        },
+        "users": {
+            "id": {
+                "name": "id",
+                "type": "int",
+                "length": "10",
+                "default": null,
+                "validator": "int"
+            },
+            "login": {
+                "name": "login",
+                "type": "varchar",
+                "length": "64",
+                "default": ""
+            },
+            "password": {
+                "name": "password",
+                "type": "varchar",
+                "length": "64",
+                "default": ""
+            },
+            "email": {
+                "name": "email",
+                "type": "varchar",
+                "length": "127",
+                "default": ""
+            },
+            "firstname": {
+                "name": "firstname",
+                "type": "varchar",
+                "length": "64",
+                "default": ""
+            },
+            "role": {
+                "name": "role",
+                "type": "int",
+                "length": "10",
+                "default": "0",
+                "validator": "int"
+            },
+            "time_created": {
+                "name": "time_created",
+                "type": "timestamp",
+                "length": null,
+                "default": "CURRENT_TIMESTAMP"
+            },
+            "enabled": {
+                "name": "enabled",
+                "type": "tinyint",
+                "length": "3",
+                "default": "1",
+                "validator": "int"
+            },
+            "avatar": {
+                "name": "avatar",
+                "type": "varchar",
+                "length": "255",
+                "default": null
+            }
+        }
+    },
+    "primary": {
+        "ip_logs": [
+            "id"
+        ],
+        "settings": [
+            "id"
+        ],
+        "uploads": [
+            "id"
+        ],
+        "user_roles": [
+            "id"
+        ],
+        "users": [
+            "id"
+        ]
+    }
+}
